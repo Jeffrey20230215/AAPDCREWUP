@@ -2,6 +2,20 @@
     color: $neutral-400;
 }
 
+.nav-item-message{
+    position: relative;
+    &::before{
+       content: '';
+       position: absolute;
+       top: 0;
+       right: 0;
+       width: 7px;
+       height: 7px;
+       background-color: $accent;
+       border-radius: 50%;
+    }
+}
+
 // message.html - active 狀態
 body[data-page="message"] .nav-item-message{
     img {
@@ -9,6 +23,9 @@ body[data-page="message"] .nav-item-message{
     }
     p{
         color: $primary-700;
+    }
+    &::before{
+        display: none;
     }
 } 
 // index.html - active 狀態
