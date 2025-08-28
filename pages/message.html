@@ -7,13 +7,131 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <title>Crew Up!</title>
   </head>
   <body data-page="message">
     <%- include('./layout/header'); -%>
 
+    <section class="container bg-tertiary-50 pt-7">
+      <div class="d-flex gap-6 flex-column">
+        <form class="position-relative">
+          <span class="material-icons-outlined position-absolute top-50 start-0 translate-middle-y ps-6 text-neutral-300 mt-1">search</span>
+          <input type="search" class="form-control py-5 ps-10 text-neutral-400 lh-base fs-3" placeholder="搜尋">
+        </form>
+        <h1 class="fw-bold lh-base fs-2">我的聊天</h1>
+        <!-- 對話1 -->
+        <a href="message-readbook.html" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-1.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">一個月閱讀兩本書<span class="ms-2">(5)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-08-28T09:40">9:40AM</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">這本超好看!</p>
+              <span class="message-badge">2</span>
+            </div>
+          </div>
+        </a>
+        <!-- 對話2 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-2.png" alt="David" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">David</h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-08-28T09:40">9:40AM</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">你好!要認識一下嗎?</p>
+              <span class="message-badge">1</span>
+            </div>
+          </div>
+        </a>
+        <!-- 對話3 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-3.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">每天跑步10公里<span class="ms-2">(5)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-08-28T08:34">8:34AM</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">欸~該動了吧</p>
+              <span class="message-badge">6</span>
+            </div>
+          </div>
+        </a>
+        <!-- 對話4 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-4.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">學習日文30天<span class="ms-2">(3)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-08-27T09:40">昨天</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">你好的日文怎麼唸?</p>
+            </div>
+          </div>
+        </a>
+        <!-- 對話5 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-5.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">台中捷運美食起步走<span class="ms-2">(5)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-06-20">6/20</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">各位下次再約</p>
+            </div>
+          </div>
+        </a>
+        <!-- 對話6 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-6.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">練習 20 種元件設計<span class="ms-2">(4)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-05-20">5/20</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">大家有空再一起出來玩</p>
+            </div>
+          </div>
+        </a>
+        <!-- 對話7 -->
+        <a href="#" class="d-flex gap-4 py-5">
+          <div>
+            <img src="../assets/images/message/headshot-7.png" alt="" class="rounded-circle headshot-img">
+          </div>
+          <div class="d-flex flex-column gap-2 w-100">
+            <div class="d-flex justify-content-between align-items-center">
+              <h3 class="fw-medium fs-3 lh-base text-neutral-950">連續重訓兩個月<span class="ms-2">(4)</span></h3>
+              <p class="lh-base text-neutral-600 fs-5"><time datetime="2025-03-31">3/31</time></p>              
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="lh-base text-neutral-600 fs-4">大家都好棒</p>
+            </div>
+          </div>
+        </a>
 
-
+        
+      </div>
+    </section>
 
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
