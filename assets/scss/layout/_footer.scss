@@ -1,5 +1,21 @@
-.nav-item-message,.nav-item-home,.nav-item-profile{
+.nav-item{
     color: $neutral-400;
+}
+.nav-item-img{
+    width: 24px;
+    height: 24px;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    &-message{
+        background-image: url("../images/bottom-tab-icon-message.svg");
+    }
+    &-home{
+        background-image: url("../images/bottom-tab-icon-home.svg");
+    }
+    &-profile{
+        background-image: url("../images/bottom-tab-icon-member.svg");
+    }
 }
 
 .nav-item-message{
@@ -16,10 +32,12 @@
     }
 }
 
+
+
 // message.html - active 狀態
 body[data-page="message"] .nav-item-message{
-    img {
-      content: url("../assets/images/bottom-tab-icon-message-acitve.svg");
+    .nav-item-img-message{
+        background-image: url("../images/bottom-tab-icon-message-active.svg");
     }
     p{
         color: $primary-700;
@@ -30,17 +48,17 @@ body[data-page="message"] .nav-item-message{
 } 
 // index.html - active 狀態
 body[data-page="home"] .nav-item-home{
-    img {
-      content: url("../assets/images/bottom-tab-icon-home-active.svg");
-    }
+    .nav-item-img-home{
+        background-image: url("../images/bottom-tab-icon-home-active.svg");
+    }    
     p{
         color: $primary-700;
     }
 } 
 // profile.html - active 狀態
 body[data-page="profile"] .nav-item-profile{
-    img {
-      content: url("../images/bottom-tab-icon-member-active.svg");
+    .nav-item-img-profile{
+        background-image: url("../images/bottom-tab-icon-member-active.svg");
     }
     p{
         color: $primary-700;

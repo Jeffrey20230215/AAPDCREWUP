@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
-
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
     <title>Crew Up!</title>
   </head>
-  <body data-page="action" class="bg-tertiary-50">
+  <body data-page="home" class="bg-tertiary-50">
     <%- include('./layout/header'); -%>
 
     <div class="container pt-7">
@@ -21,12 +21,14 @@
       <nav class="navbar">
         <div class="container-fluid position-relative">
           <h1 class="fw-bold lh-base fs-2 mx-auto text-center">建立活動</h1>
-          <span
-            class="material-symbols-rounded position-absolute end-0 top-50 translate-middle-y me-2"
-            role="button"
-          >
-            close
-          </span>
+          <a href="index.html">
+            <span
+              class="material-icons-outlined position-absolute end-0 top-50 translate-middle-y me-2 text-accent"
+              role="button"
+            >
+              close
+            </span>
+          </a>
         </div>
       </nav>
 
@@ -61,7 +63,7 @@
       <div class="theme-selector d-flex justify-content-center gap-4 pb-7">
         <!-- 自我提升 -->
         <div
-          class="theme-btn"
+          class="theme-btn active"
           data-theme="self"
           data-image="assets/images/action/upload-img/1-img-self-improvement.svg"
         >
@@ -139,7 +141,7 @@
           style="max-height: 150px"
         />
         <p class="fs-3 text-neutral-900 mb-4">或上傳自己的圖片</p>
-        <button class="fs-5 fw-medium btn btn-outline-secondary btn-sm">
+        <button class="fs-5 fw-medium btn btn-outline-secondary btn-sm bg-white">
           + 上傳圖片
         </button>
       </div>
