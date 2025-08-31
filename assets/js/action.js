@@ -1,7 +1,3 @@
-// 引入 Swiper（如果要用的話）
-import Swiper from "swiper";
-import "swiper/css";
-
 document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".theme-btn");
   const themeImage = document.getElementById("theme-image");
@@ -28,5 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       });
     });
+  }
+});
+
+// ✅ 預設觸發第一個主題（自我提升）
+document.addEventListener("DOMContentLoaded", () => {
+  const firstBtn = document.querySelector(".theme-btn"); // 抓第一個主題按鈕
+  if (firstBtn) {
+    firstBtn.click(); // 模擬點擊，會自動更新 #theme-image
   }
 });

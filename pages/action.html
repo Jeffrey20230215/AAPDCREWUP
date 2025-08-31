@@ -10,10 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
     <title>Crew Up!</title>
   </head>
-  <body data-page="home" class="bg-tertiary-50">
+  <body data-page="action" class="bg-tertiary-50">
     <%- include('./layout/header'); -%>
 
     <div class="container pt-7">
@@ -21,14 +21,12 @@
       <nav class="navbar">
         <div class="container-fluid position-relative">
           <h1 class="fw-bold lh-base fs-2 mx-auto text-center">建立活動</h1>
-          <a href="index.html">
-            <span
-              class="material-icons-outlined position-absolute end-0 top-50 translate-middle-y me-2 text-accent"
-              role="button"
-            >
-              close
-            </span>
-          </a>
+          <span
+            class="material-symbols-rounded position-absolute end-0 top-50 translate-middle-y me-2"
+            role="button"
+          >
+            close
+          </span>
         </div>
       </nav>
 
@@ -63,14 +61,14 @@
       <div class="theme-selector d-flex justify-content-center gap-4 pb-7">
         <!-- 自我提升 -->
         <div
-          class="theme-btn active"
+          class="theme-btn"
           data-theme="self"
-          data-image="assets/images/action/upload-img/1-img-self-improvement.svg"
+          data-image="/images/action/upload-img/1-img-self-improvement.svg"
         >
           <div class="theme-icon">
             <div class="icon-wrapper">
               <img
-                src="assets/images/action/icon-1-self-improvement.svg"
+                src="/images/action/icon-1-self-improvement.svg"
                 alt="自我提升圖示"
               />
               <span class="theme-label">自我提升</span>
@@ -82,12 +80,12 @@
         <div
           class="theme-btn"
           data-theme="outdoor"
-          data-image="assets/images/action/upload-img/2-img-out-door.svg"
+          data-image="/images/action/upload-img/2-img-out-door.svg"
         >
           <div class="theme-icon">
             <div class="icon-wrapper">
               <img
-                src="assets/images/action/icon-2-out-door.svg"
+                src="/images/action/icon-2-out-door.svg"
                 alt="戶外活動圖示"
               />
               <span class="theme-label">戶外活動</span>
@@ -99,12 +97,12 @@
         <div
           class="theme-btn"
           data-theme="relax"
-          data-image="assets/images/action/upload-img/3-img-relaxing.svg"
+          data-image="/images/action/upload-img/3-img-relaxing.svg"
         >
           <div class="theme-icon">
             <div class="icon-wrapper">
               <img
-                src="assets/images/action/icon-3-relaxing.svg"
+                src="/images/action/icon-3-relaxing.svg"
                 alt="放鬆身心圖示"
               />
               <span class="theme-label">放鬆身心</span>
@@ -116,12 +114,12 @@
         <div
           class="theme-btn"
           data-theme="learn"
-          data-image="assets/images/action/upload-img/4-img-learning-new.svg"
+          data-image="/images/action/upload-img/4-img-learning-new.svg"
         >
           <div class="theme-icon">
             <div class="icon-wrapper">
               <img
-                src="assets/images/action/icon-4-learning-new.svg"
+                src="/images/action/icon-4-learning-new.svg"
                 alt="學習新知圖示"
               />
               <span class="theme-label">學習新知</span>
@@ -135,13 +133,13 @@
         <p class="fs-3 text-neutral-900 mb-2">活動預設示意圖片</p>
         <img
           id="theme-image"
-          src="assets/images/action/upload-img/1-img-self-improvement.svg"
+          src=""
           alt="活動圖片"
           class="img-fluid mb-2"
           style="max-height: 150px"
         />
         <p class="fs-3 text-neutral-900 mb-4">或上傳自己的圖片</p>
-        <button class="fs-5 fw-medium btn btn-outline-secondary btn-sm bg-white">
+        <button class="fs-5 fw-medium btn btn-outline-secondary btn-sm">
           + 上傳圖片
         </button>
       </div>

@@ -1,7 +1,3 @@
-// 一定要在最上方
-import Swiper from "swiper";
-import "swiper/css";
-
 // main.js
 import "./assets/js/action.js"; // ✅ 確保 action.js 會執行
 
