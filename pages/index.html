@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
+    <title>index</title>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+
+    <section class="bgcrewup bgprimarycolor">
+      <h2 class="fw-bold text-center pt-4">Hello! 林薇</h2>
+      <p class="text-center" style="font-weight: 500;">我的活動</p>
+      <div class="d-flex justify-content-center">
+        <a class="me-2" style="color: #C64508; font-size: 14px;" href="">進行中(2)</a>
+        <a style="color: #656565; font-size: 14px;" href="">報名中(1)</a>
+      </div>
+      <div class="container justify-content-center py-4 px-4">
+        <div class="row bg-white rounded-4 shadow" style="width: 295px;">
+          <div class="py-4 px-4 d-flex">
+            <img src="../assets/images/img-out-door.png" alt="" style="width: 56px; height: 56px;" class="me-2">        
+            <div style="height: 56px width: 165px;">
+              <small class="fw-bolder">每天跑步10公里</small>
+              <img src="../assets/images/progress.png" alt="" class="d-block" >
+              <span style="font-size: 12px; margin-right: 12px; color: #5090A7;">進行中</span>
+              <span style="font-size: 12px;">2025/07/27-08/26</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="d-flex justify-content-center">
+        <span class="partnerborder p-2 rounded-3">
+         和夥伴持續努力完成目標吧！
+        </span>        
+      </div>
+      <div class="d-flex justify-content-center">
+        <img src="../assets/images/cubi_faceR.png" alt="" style="width: 100px; height: 97px;">
+      </div>
+    </section>
+    <!-- 熱門活動 -->
+    <section class="bgprimarycolor pb-3 pt-4"> 
+      <p class="text-center mb-2" style="font-weight: 500;">熱門活動</p>
+      <div class="container justify-content-center mx-4 px-4">
+        <div class="row bg-white rounded-4 shadow" style="width: 327px;">
+          <div class="px-4 mt-4 d-flex justify-content-between">
+            <div>
+              <small>報名倒數</small><small style="color: #C64508;">4天7小時23分</small>
+            </div>
+            <div>
+              <small>熱門活動</small>
+            </div>
+          </div>
+          <div class="col py-4 px-4 d-flex">
+            <img src="../assets/images/img-out-door.png" alt="" style="width: 80px; height: 80px;" class="me-2">        
+            <div class="align-items-center" >
+              <p class="fw-bolder mb-1">每天跑步3公里</p>              
+              <p style="font-size: 12px; margin-bottom: 2px;">主題:<span style="color: #5090A7">自我提升</span></p>
+              <div class="d-flex position-relative" style="font-size: 12px;">
+                <p style="padding-right: 6px; border-right: 1px solid #292929;">已報名：2/<span>4</span>人</p>
+                <p style="padding-left: 5px;">活動天數：30天</p>
+                <a style="margin-right: -52px;" class="position-absolute start-100 bottom-0" href="./activity.html"><img src="../assets/images/btn-create-activities.png" alt=""></a>
+              </div>
+            </div>            
+          </div>
+          <div class="d-flex justify-content-between px-4 pb-3">
+            <div>
+              <img src="../assets/images/Ellipse 1.png" alt="">
+              <span>Evan</span>
+            </div>
+            <div>
+              <img src="../assets/images/Ellipse 4.png" alt=""><img src="../assets/images/Ellipse 2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 尋找有興趣的主題 -->
+    <section class="bgprimarycolor py-4">
+      <p class="text-center mb-2" style="font-weight: 500;">尋找有興趣的主題</p>
+      <div class="container px-4">
+        <div class="row">
+          <div class="col-3">
+            <img src="../assets/images/icon-park-solid_outdoor.png" alt="" class="d-block">
+            <small>自我提升</small>
+          </div>
+          <div class="col-3">
+            <img src="../assets/images/icon-park-outdoor.png" alt="" class="d-block">
+            <small>戶外活動</small>
+          </div>
+          <div class="col-3">
+            <img src="../assets/images/icon-park-solid_relax.png" alt="" class="d-block">
+            <small>放鬆身心</small>
+          </div>
+          <div class="col-3">
+            <img src="../assets/images/icon-park-solid_relax.png" alt="" class="d-block">
+            <small>學習新知</small>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 有其他感興趣的活動嗎 -->
+    <section style="background-color: #FFEED4; padding-top: 38px; padding-bottom: 38px;">
+      <div class="mx-auto d-grid" style="width: 183px;">
+        <p class="text-center" style="font-weight: 500;">有其他感興趣的活動嗎?</p>
+        <a href="./activity.html" type="button" class="btn btn-danger text-white fw-bold" style="padding-left: 44.5px; padding-right: 44.5px; padding-top: 12px; padding-bottom: 12px;"><i class="bi bi-plus align-items-bottom" style="font-size: 24px;"></i>建立活動</a>
+      </div>        
+    </section> 
+    <!-- 參與活躍Crewer的活動 -->
+    <section class="bgprimarycolor py-4">
+      <p class="text-center">參與活躍Crewer的活動</p>
+      <div class="d-flex mb-4" style="padding-left: 23px; padding-right: 23px;">
+        <img src="../assets/images/david.png" alt="" class="ms-3" style="width: 50px; height: 50px; margin-right: 12px;">
+        <div>
+          <div class="d-flex justify-content-between ">
+            <span>David</span>
+            <span><i class="bi bi-star-fill me-1" style="color: #FFA552;"></i>4.8</span>
+          </div>
+          <div>
+            <span style="margin-right: 12px;">已完成活動 : 21</span><div class="vr"></div><span style="margin-left: 12px;">進行中活動 : 2</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="d-flex mb-4" style="padding-left: 23px; padding-right: 23px;">
+        <img src="../assets/images/Evan.png" alt="" class="ms-3" style="width: 50px; height: 50px; margin-right: 12px;">
+        <div>
+          <div class="d-flex justify-content-between ">
+            <span>Evan</span>
+            <span><i class="bi bi-star-fill me-1" style="color: #FFA552;"></i>4.7</span>
+          </div>
+          <div>
+            <span style="margin-right: 12px;">已完成活動 : 16</span><div class="vr"></div><span style="margin-left: 12px;">進行中活動 4 2</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex" style="padding-left: 23px; padding-right: 23px;">
+        <img src="../assets/images/Jenine.png" alt="" class="ms-3" style="width: 50px; height: 50px; margin-right: 12px;">
+        <div>
+          <div class="d-flex justify-content-between ">
+            <span>Jenine</span>
+            <span><i class="bi bi-star-fill me-1" style="color: #FFA552;"></i>4.8</span>
+          </div>
+          <div>
+            <span style="margin-right: 12px;">已完成活動 : 12</span><div class="vr"></div><span style="margin-left: 12px;">進行中活動 1 2</span>
+          </div>
+        </div>
+      </div>
+      
+    </section> 
+
+
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>

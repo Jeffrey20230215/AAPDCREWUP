@@ -1,0 +1,35 @@
+html{
+  font-family: "Noto Sans TC", sans-serif;
+}
+.index-title {
+  font-size: 100px;
+}
+
+.bgcrewup {
+  background: url("../assets/images/home-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.partnerborder {
+  border: 1px solid #FFA552;  
+  background-color: #FFDAA8;
+}
+
+.bgprimarycolor{
+  background-color: #FFF8EB;
+}
+
+.btn-danger {
+  --bs-btn-bg:#C64508;
+  --bs-btn-hover-bg:#C64508;
+  --bs-btn-active-bg: #C64508;
+}
+
+.vr {
+  opacity: 1;
+}
+
+.nav-pills {
+  --bs-nav-pills-link-active-bg:none;
+}
