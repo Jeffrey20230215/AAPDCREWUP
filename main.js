@@ -1,9 +1,16 @@
-import './assets/scss/all.scss';
-import 'bootstrap/dist/js/bootstrap.min.js';
+// 一定要在最上方
+import Swiper from "swiper";
+import "swiper/css";
 
-console.log('Hello world');
+// main.js
+import "./assets/js/action.js"; // ✅ 確保 action.js 會執行
 
-const swiper = new Swiper('.swiper', {
+import "./assets/scss/all.scss";
+import "bootstrap/dist/js/bootstrap.min.js";
+
+console.log("Hello world");
+
+const swiper = new Swiper(".swiper", {
   // Optional parameters
   loop: true,
   slidesPerView: "auto",
@@ -13,16 +20,16 @@ const swiper = new Swiper('.swiper', {
 
   // Navigation arrows
   navigation: {
-    nextEl: '.profile-swiper-button-next',
-    prevEl: '.profile-swiper-button-prev',
+    nextEl: ".profile-swiper-button-next",
+    prevEl: ".profile-swiper-button-prev",
   },
 });
 
 // 這裡加監聽事件
-swiper.on('slideNextTransitionStart', () => {
-  console.log('右鍵被觸發了');
+swiper.on("slideNextTransitionStart", () => {
+  console.log("右鍵被觸發了");
 });
 
-swiper.on('slidePrevTransitionStart', () => {
-  console.log('左鍵被觸發了');
+swiper.on("slidePrevTransitionStart", () => {
+  console.log("左鍵被觸發了");
 });

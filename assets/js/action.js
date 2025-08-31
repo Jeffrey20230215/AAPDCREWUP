@@ -1,21 +1,32 @@
-// 1. 抓取所有主題按鈕
-const buttons = document.querySelectorAll(".theme-btn");
-// 2. 抓取下方顯示圖片的 <img>
-const themeImage = document.getElementById("theme-image");
+// 引入 Swiper（如果要用的話）
+import Swiper from "swiper";
+import "swiper/css";
 
-// 3. 綁定點擊事件
-buttons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    // (a) 移除所有 active 樣式
-    buttons.forEach((b) => b.classList.remove("active"));
+document.addEventListener("DOMContentLoaded", () => {
+  const buttons = document.querySelectorAll(".theme-btn");
+  const themeImage = document.getElementById("theme-image");
 
-    // (b) 把目前點擊的加上 active
-    btn.classList.add("active");
+  // Vite 提供的專案 base，例如本地是 "/"，Pages 上會是 "/AAPDCREWUP/"
+  const base = import.meta.env.BASE_URL;
 
-    // (c) 從 data-image 取圖片路徑並更新下方圖片
-    const imgPath = btn.dataset.image;
-    if (imgPath) {
-      themeImage.src = imgPath;
-    }
-  });
+  // 初始化修正預設圖片
+  if (themeImage && themeImage.getAttribute("src")) {
+    const originalSrc = themeImage.getAttribute("src");
+    themeImage.src = base + originalSrc.replace(/^(\.\/|\/)/, "");
+  }
+
+  // 點擊切換功能
+  if (buttons.length && themeImage) {
+    buttons.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        buttons.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const imgPath = btn.dataset.image;
+        if (imgPath) {
+          themeImage.src = base + imgPath.replace(/^(\.\/|\/)/, "");
+        }
+      });
+    });
+  }
 });
