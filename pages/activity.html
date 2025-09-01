@@ -15,7 +15,8 @@
     <section>
         <img src="../assets/images/section.png" alt="" style="width: 343px; margin: 0 auto; display: block; padding-top: 16px;">
         <p class="text-center" style="font-size: 18px; font-weight: 700;">建立活動</p>
-        <img src="../assets/images/activity process.png" alt="" style="width: 250px; margin: 0 auto; display: block;">
+        <img class="mb-3" src="../assets/images/activity process.png" alt="" style="width: 250px; margin: 0 auto; display: block;">
+        <p class="text-center">請選擇活動主題！</p>
     </section>
     
     <ul class="nav nav-pills mb-3 mx-auto" style="gap: 8px; width: 328px;" id="pills-tab" role="tablist">
@@ -35,38 +36,42 @@
     </ul>
     <div class="tab-content" id="pills-tabContent">
         <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-            <div class="mx-auto" style="width: 311px; padding: 24px 91px;">
+            <div class="mx-auto border rounded-3 mb-3 text-center" style="width: 311px; padding: 24px 91px;">
                 <p style="font-size: 15px;">活動預設示意圖片</p>
-                <img src="../assets/images/img-self-improvement.png" alt="">
+                <img src="../assets/images/img-self-improvement.png" alt="" style="margin-bottom: 10px;">
                 <p style="font-size: 15px;">或上傳自己的圖片</p>
-                <label for="fileUpload" class="btn border">上傳檔案</label>
+                <label for="fileUpload" class="btn uploadbgcolor" style="font-size: 12px; padding-left: 8px; padding-right: 8px; border: 1px solid #5090A7; color: #3D758C;"><i class="bi bi-plus align-items-bottom" style="font-size: 14px;"></i>上傳檔案</label>
+                <input class="d-none" type="file" name="fileUpload" id="fileUpload">
             </div>
 
         </div>
         <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-            <div class="mx-auto" style="width: 311px; padding: 24px 91px;">
+            <div class="mx-auto border rounded-3 mb-3 text-center" style="width: 311px; padding: 24px 91px;">
                 <p style="font-size: 15px;">活動預設示意圖片</p>
-                <img src="../assets/images/img-out-dooractive.png" alt="">
+                <img src="../assets/images/img-out-dooractive.png" alt="" style="margin-bottom: 10px;">
                 <p style="font-size: 15px;">或上傳自己的圖片</p>
-                <label for="fileUpload" class="btn border">上傳檔案</label>
+                <label for="fileUpload" class="btn" style="font-size: 12px; padding-left: 8px; padding-right: 8px; border: 1px solid #5090A7; color: #3D758C;"><i class="bi bi-plus align-items-bottom" style="font-size: 14px;"></i>上傳檔案</label>
+                <input class="d-none" type="file" name="fileUpload" id="fileUpload">
             </div>
 
         </div>
         <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-            <div class="mx-auto" style="width: 311px; padding: 24px 91px;">
+            <div class="mx-auto border rounded-3 mb-3 text-center" style="width: 311px; padding: 24px 91px;">
                 <p style="font-size: 15px;">活動預設示意圖片</p>
-                <img src="../assets/images/img-relaxing.png" alt="">
+                <img src="../assets/images/img-relaxing.png" alt="" style="margin-bottom: 10px;">
                 <p style="font-size: 15px;">或上傳自己的圖片</p>
-                <label for="fileUpload" class="btn border">上傳檔案</label>
+                <label for="fileUpload" class="btn" style="font-size: 12px; padding-left: 8px; padding-right: 8px; border: 1px solid #5090A7; color: #3D758C;"><i class="bi bi-plus align-items-bottom" style="font-size: 14px;"></i>上傳檔案</label>
+                <input class="d-none" type="file" name="fileUpload" id="fileUpload">
             </div>
 
         </div>
         <div class="tab-pane fade" id="pills-learn" role="tabpanel" aria-labelledby="pills-learn-tab" tabindex="0">
-            <div class="mx-auto" style="width: 311px; padding: 24px 91px;">
+            <div class="mx-auto border rounded-3 mb-3 text-center" style="width: 311px; padding: 24px 91px;">
                 <p style="font-size: 15px;">活動預設示意圖片</p>
-                <img src="../assets/images/img-learning-new.png" alt="">
+                <img src="../assets/images/img-learning-new.png" alt="" style="margin-bottom: 10px;">
                 <p style="font-size: 15px;">或上傳自己的圖片</p>
-                <label for="fileUpload" class="btn border">上傳檔案</label>
+                <label for="fileUpload" class="btn" style="font-size: 12px; padding-left: 8px; padding-right: 8px; border: 1px solid #5090A7; color: #3D758C;"><i class="bi bi-plus align-items-bottom" style="font-size: 14px;"></i>上傳檔案</label>
+                <input class="d-none" type="file" name="fileUpload" id="fileUpload">
             </div>
 
         </div>
@@ -74,6 +79,7 @@
     <div class="d-grid container">
         <a href="" type="button" class="btn btn-danger text-white fw-bold" style="padding-left: 44.5px; padding-right: 44.5px; padding-top: 12px; padding-bottom: 12px;">下一步</a>
     </div>
+    
     
 
     <script type="module" src="../main.js"></script>
